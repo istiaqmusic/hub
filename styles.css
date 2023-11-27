@@ -13,8 +13,9 @@ body {
 button {
   background: none;
   border: none;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold;
+  color: white;
 }
 
 button:hover span {
@@ -22,5 +23,5 @@ button:hover span {
 }
 
 button:hover:before {
-  content: "music"
+  content: "media"
 }
