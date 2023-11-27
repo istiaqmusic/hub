@@ -16,6 +16,7 @@ button {
   font-size: 1em;
   font-weight: bold;
   color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 
 button:hover span {
