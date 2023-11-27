@@ -14,12 +14,24 @@
         ebsite
         <br>
       </a>
+    <audio src="audio/ditty.mp3" id="audio">
+    </audio>
     <script>
-      function playAudio(audio/ditty.mp3) {
-        new Audio(audio/ditty.mp3).play();
+      function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+          audio.play();
+          $('#play').removeClass('glyphicon-play-circle')
+          $('#play').addClass('glyphicon-pause')
+        }else{
+          audio.pause();
+          audio.currentTime = 0
+          $('#play').removeClass('glyphicon-play-circle')
+          $('#play').addClass('glyphicon-pause')
+        }
       }
     </script>
-    <img src="images/logo.gif" width="300" height="300" onclick="playAudio('ditty.mp3')>
+    <img src="images/logo.gif" width="300" height="300" id="play" onclick="play()">
     </h1>
     <p>
       <div id="portals">
