@@ -25,4 +25,6 @@ button:hover span {
 
 button:hover:before {
   content: "media"
+  color: black;
+  background: white;
 }
