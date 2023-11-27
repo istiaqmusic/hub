@@ -6,9 +6,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <audio autoplay loop controls style="display:none;">
-    <source src="audio/ditty.mp3">
-  </audio>
   <div id="page">
     <h1>
       <a>
@@ -17,7 +14,12 @@
         ebsite
         <br>
       </a>
-    <img src="images/logo.gif" width="300" height="300">
+    <script>
+      function playAudio(audio/ditty.mp3) {
+        new Audio(audio/ditty.mp3).play();
+      }
+    </script>
+    <img src="images/logo.gif" width="300" height="300" onclick="playAudio('ditty.mp3')>
     </h1>
     <p>
       <div id="portals">
