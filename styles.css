@@ -10,3 +10,17 @@
 body {
   background-color: black;
 }
+button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+button:hover span {
+  display: none
+}
+
+button:hover:before {
+  content: "music"
+}
