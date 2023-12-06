@@ -9,8 +9,22 @@
 <body>
   <div id="page">
     <h1>
+      <script>
+        var links = [
+          'texts',
+          'video',
+          'about',
+          'media',
+          'image'
+        ];
+
+        function randomlink() {
+          var x parseInt(Math.random() * links.length);
+          location.href = links[x];
+        }
+      </script>
       <a>
-        istiaq<button><span>#####</span></button>_00 w
+        istiaq<button href="istiaqmusic.github.io/hub" onclick="randomlink();"><span>#####</span></button>_00 w
         <br>
         ebsite
         <br>
